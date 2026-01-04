@@ -15,7 +15,7 @@ days = st.sidebar.slider("Days of Historical Data", 30, 365, 90)
 future_days = st.sidebar.slider("Days to Predict", 5, 60, 30)
 
 # Load data
-data = load_stock_data(symbol, days)
+data = load_stock_data(symbol,days)
 
 if data is not None and not data.empty:
     st.subheader(f"Stock Price Data for {symbol}")
